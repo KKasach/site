@@ -68,7 +68,13 @@ Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https:/
 - import file site.sql in DB
 
 
+<<<<<<< HEAD
 default branch master
+=======
+Kate
+
+branch Kate
+>>>>>>> Kate
 
 
 
