@@ -11,12 +11,24 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<?
 		if($_SESSION['user_id']){
-			?>
-			<script src="media/cabinet.js"></script>
-			<?
-		}
 	?>
-
+			<script src="media/cabinet.js"></script>
+	<?
+		}
+		if(!empty($scripts)){
+			foreach($scripts as $scripts){
+				
+				
+	?>		
+	<script src="<?=$script?>"></script>
+	
+	<?php	
+		}
+	}	
+	?>
+		
+	<script src="media/main.js"></script>
+	
   </body>
 
 </html>

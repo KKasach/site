@@ -16,6 +16,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -32,30 +33,33 @@
 
   
     <!-- Navigation -->
+	<div id="hovertitle">WELCOME</div>
     <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+	
       <div class="container">
+	  
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav mx-auto hinthide">
 
            
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">
+              <a class="nav-link text-uppercase text-expanded hinthover" href="index.php" data-body="Заходите на нашу страницу" data-color="red">
                Home
               </a>
             </li>
          
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="static.php?url=ABOUT">About</a>
+              <a class="nav-link text-uppercase text-expanded hinthover" href="static.php?url=ABOUT" data-body="Узнайте больше о компании" data-color="green">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="static.php?url=BLOG">Blog</a>
+              <a class="nav-link text-uppercase text-expanded hinthover" href="static.php?url=BLOG" data-body="Читайте о нас" data-color="yellow">Blog</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="static.php?url=CONTACTS">Contact</a>
+              <a class="nav-link text-uppercase text-expanded hinthover" href="static.php?url=CONTACTS" data-body="Пишите нам" data-color="blue">Contact</a>
             </li>
 			<?php
 				if(isset($_SESSION['user_id'])){

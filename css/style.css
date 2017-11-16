@@ -1,0 +1,54 @@
+#hovertitle {
+	display: none;
+	position: fixed;
+	font-size: 12px;
+	padding: 7px;
+	background: #ddd;
+	color: #222;
+	border: 1px solid #9e9e9e;
+	border-radius: 2px;
+	z-index: 99;
+}
+
+
+.modal-window{
+	position: fixed;
+	left: 50%;
+	top: 30%;
+	width:400px;
+	margin-left: -200px;
+	padding: 10px;
+	border: solid 1px grey;
+	border-radius: 0px;
+	box-shadow: 1px 1px 1px black;
+	z-index: 99;
+	background: white;
+	min-height:400px;
+}
+
+.modal-close-btn{
+	position: absolute;
+    top: 1px;
+	right: 1px;
+	color: red;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.modal-close-btn :before{
+	position: absolute;
+	content: "Закрыть";
+	font-size: 12px;
+}
+
+#jq-overlay{
+	z-index:3; 
+	position:fixed;
+	background-color:#000;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%;
+	top:0;
+	left:0;
+}
